@@ -7,9 +7,20 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		921E8CB821EDEA290014B923 /* extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 921E8CB721EDEA290014B923 /* extensions.swift */; };
 		921FF49521BC6BFD00FCA806 /* VelaSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 921FF48B21BC6BFD00FCA806 /* VelaSDK.framework */; };
 		921FF49A21BC6BFD00FCA806 /* VelaSDKTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 921FF49921BC6BFD00FCA806 /* VelaSDKTests.swift */; };
 		921FF49C21BC6BFD00FCA806 /* VelaSDK.h in Headers */ = {isa = PBXBuildFile; fileRef = 921FF48E21BC6BFD00FCA806 /* VelaSDK.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		921FF4A621BC6C3100FCA806 /* VelaAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 921FF4A521BC6C3100FCA806 /* VelaAPI.swift */; };
+		921FF4AE21BD455100FCA806 /* AppService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 921FF4AD21BD455100FCA806 /* AppService.swift */; };
+		921FF4B021BD6B3C00FCA806 /* BankProfile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 921FF4AF21BD6B3C00FCA806 /* BankProfile.swift */; };
+		921FF4B321BD6DFC00FCA806 /* SMSMessageComposer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 921FF4B221BD6DFC00FCA806 /* SMSMessageComposer.swift */; };
+		92282CE721EF79F2006E9DD3 /* SMSUIViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92282CE621EF79F2006E9DD3 /* SMSUIViewController.swift */; };
+		9274D8F121BD76BC0060783F /* SMSMessagePipeline.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9274D8F021BD76BC0060783F /* SMSMessagePipeline.swift */; };
+		927707E621BFA3B900445B48 /* MessageTransmission.swift in Sources */ = {isa = PBXBuildFile; fileRef = 927707E521BFA3B900445B48 /* MessageTransmission.swift */; };
+		927707EA21BFB2DB00445B48 /* SMSAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 927707E921BFB2DB00445B48 /* SMSAPI.swift */; };
+		927707EE21BFD05900445B48 /* BillPaymentConstant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 927707ED21BFD05900445B48 /* BillPaymentConstant.swift */; };
+		BB29D78FD46C4BFF331B36AF /* Pods_VelaSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 53061F2CC7D1329D188AB294 /* Pods_VelaSDK.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -23,12 +34,26 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		2D574D881484A8DD666583B4 /* Pods-VelaSDK.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VelaSDK.debug.xcconfig"; path = "Pods/Target Support Files/Pods-VelaSDK/Pods-VelaSDK.debug.xcconfig"; sourceTree = "<group>"; };
+		4E7137A2637A14762B13D757 /* Pods_VelaSDKTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_VelaSDKTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		53061F2CC7D1329D188AB294 /* Pods_VelaSDK.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_VelaSDK.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		921E8CB721EDEA290014B923 /* extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = extensions.swift; sourceTree = "<group>"; };
 		921FF48B21BC6BFD00FCA806 /* VelaSDK.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = VelaSDK.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		921FF48E21BC6BFD00FCA806 /* VelaSDK.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = VelaSDK.h; sourceTree = "<group>"; };
 		921FF48F21BC6BFD00FCA806 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		921FF49421BC6BFD00FCA806 /* VelaSDKTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = VelaSDKTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		921FF49921BC6BFD00FCA806 /* VelaSDKTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VelaSDKTests.swift; sourceTree = "<group>"; };
 		921FF49B21BC6BFD00FCA806 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		921FF4A521BC6C3100FCA806 /* VelaAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VelaAPI.swift; sourceTree = "<group>"; };
+		921FF4AD21BD455100FCA806 /* AppService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppService.swift; sourceTree = "<group>"; };
+		921FF4AF21BD6B3C00FCA806 /* BankProfile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BankProfile.swift; sourceTree = "<group>"; };
+		921FF4B221BD6DFC00FCA806 /* SMSMessageComposer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SMSMessageComposer.swift; sourceTree = "<group>"; };
+		92282CE621EF79F2006E9DD3 /* SMSUIViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SMSUIViewController.swift; sourceTree = "<group>"; };
+		9274D8F021BD76BC0060783F /* SMSMessagePipeline.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SMSMessagePipeline.swift; sourceTree = "<group>"; };
+		927707E521BFA3B900445B48 /* MessageTransmission.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageTransmission.swift; sourceTree = "<group>"; };
+		927707E921BFB2DB00445B48 /* SMSAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SMSAPI.swift; sourceTree = "<group>"; };
+		927707ED21BFD05900445B48 /* BillPaymentConstant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BillPaymentConstant.swift; sourceTree = "<group>"; };
+		EE97B625D8876A7D66D93B32 /* Pods-VelaSDK.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VelaSDK.release.xcconfig"; path = "Pods/Target Support Files/Pods-VelaSDK/Pods-VelaSDK.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -36,6 +61,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BB29D78FD46C4BFF331B36AF /* Pods_VelaSDK.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -50,12 +76,23 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		6A6E855F0E313309E335A945 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				2D574D881484A8DD666583B4 /* Pods-VelaSDK.debug.xcconfig */,
+				EE97B625D8876A7D66D93B32 /* Pods-VelaSDK.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		921FF48121BC6BFD00FCA806 = {
 			isa = PBXGroup;
 			children = (
 				921FF48D21BC6BFD00FCA806 /* VelaSDK */,
 				921FF49821BC6BFD00FCA806 /* VelaSDKTests */,
 				921FF48C21BC6BFD00FCA806 /* Products */,
+				6A6E855F0E313309E335A945 /* Pods */,
+				E0FC7CD5475A83188796F745 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -71,8 +108,17 @@
 		921FF48D21BC6BFD00FCA806 /* VelaSDK */ = {
 			isa = PBXGroup;
 			children = (
+				921FF4B121BD6B7200FCA806 /* staticservice */,
 				921FF48E21BC6BFD00FCA806 /* VelaSDK.h */,
 				921FF48F21BC6BFD00FCA806 /* Info.plist */,
+				921FF4A521BC6C3100FCA806 /* VelaAPI.swift */,
+				927707E921BFB2DB00445B48 /* SMSAPI.swift */,
+				921FF4B221BD6DFC00FCA806 /* SMSMessageComposer.swift */,
+				9274D8F021BD76BC0060783F /* SMSMessagePipeline.swift */,
+				927707E521BFA3B900445B48 /* MessageTransmission.swift */,
+				927707ED21BFD05900445B48 /* BillPaymentConstant.swift */,
+				921E8CB721EDEA290014B923 /* extensions.swift */,
+				92282CE621EF79F2006E9DD3 /* SMSUIViewController.swift */,
 			);
 			path = VelaSDK;
 			sourceTree = "<group>";
@@ -84,6 +130,24 @@
 				921FF49B21BC6BFD00FCA806 /* Info.plist */,
 			);
 			path = VelaSDKTests;
+			sourceTree = "<group>";
+		};
+		921FF4B121BD6B7200FCA806 /* staticservice */ = {
+			isa = PBXGroup;
+			children = (
+				921FF4AD21BD455100FCA806 /* AppService.swift */,
+				921FF4AF21BD6B3C00FCA806 /* BankProfile.swift */,
+			);
+			path = staticservice;
+			sourceTree = "<group>";
+		};
+		E0FC7CD5475A83188796F745 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				53061F2CC7D1329D188AB294 /* Pods_VelaSDK.framework */,
+				4E7137A2637A14762B13D757 /* Pods_VelaSDKTests.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -104,6 +168,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 921FF49F21BC6BFD00FCA806 /* Build configuration list for PBXNativeTarget "VelaSDK" */;
 			buildPhases = (
+				57BB6BDDDABFC4D240C203BB /* [CP] Check Pods Manifest.lock */,
 				921FF48621BC6BFD00FCA806 /* Headers */,
 				921FF48721BC6BFD00FCA806 /* Sources */,
 				921FF48821BC6BFD00FCA806 /* Frameworks */,
@@ -148,6 +213,7 @@
 				TargetAttributes = {
 					921FF48A21BC6BFD00FCA806 = {
 						CreatedOnToolsVersion = 10.0;
+						LastSwiftMigration = 1000;
 					};
 					921FF49321BC6BFD00FCA806 = {
 						CreatedOnToolsVersion = 10.0;
@@ -189,11 +255,42 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		57BB6BDDDABFC4D240C203BB /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-VelaSDK-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		921FF48721BC6BFD00FCA806 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				921FF4B021BD6B3C00FCA806 /* BankProfile.swift in Sources */,
+				927707E621BFA3B900445B48 /* MessageTransmission.swift in Sources */,
+				921FF4B321BD6DFC00FCA806 /* SMSMessageComposer.swift in Sources */,
+				9274D8F121BD76BC0060783F /* SMSMessagePipeline.swift in Sources */,
+				92282CE721EF79F2006E9DD3 /* SMSUIViewController.swift in Sources */,
+				921E8CB821EDEA290014B923 /* extensions.swift in Sources */,
+				927707EA21BFB2DB00445B48 /* SMSAPI.swift in Sources */,
+				921FF4A621BC6C3100FCA806 /* VelaAPI.swift in Sources */,
+				921FF4AE21BD455100FCA806 /* AppService.swift in Sources */,
+				927707EE21BFD05900445B48 /* BillPaymentConstant.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -340,7 +437,9 @@
 		};
 		921FF4A021BC6BFD00FCA806 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2D574D881484A8DD666583B4 /* Pods-VelaSDK.debug.xcconfig */;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
@@ -358,6 +457,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = ios.velabank.VelaSDK;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -365,7 +465,9 @@
 		};
 		921FF4A121BC6BFD00FCA806 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = EE97B625D8876A7D66D93B32 /* Pods-VelaSDK.release.xcconfig */;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
@@ -391,6 +493,7 @@
 		921FF4A321BC6BFD00FCA806 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = F6EB72G8E4;
 				INFOPLIST_FILE = VelaSDKTests/Info.plist;
@@ -409,6 +512,7 @@
 		921FF4A421BC6BFD00FCA806 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = F6EB72G8E4;
 				INFOPLIST_FILE = VelaSDKTests/Info.plist;

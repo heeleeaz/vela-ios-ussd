@@ -9,10 +9,10 @@
 #import <UIKit/UIKit.h>
 
 //! Project version number for VelaSDK.
-FOUNDATION_EXPORT double VelaSDKVersionNumber;
+FOUNDATION_EXPORT double VelaSDKVersionNumber = 1.0;
 
 //! Project version string for VelaSDK.
-FOUNDATION_EXPORT const unsigned char VelaSDKVersionString[];
+FOUNDATION_EXPORT const unsigned char VelaSDKVersionString[] = "1.0";
 
 // In this header, you should import all the public headers of your framework using statements like #import <VelaSDK/PublicHeader.h>
 

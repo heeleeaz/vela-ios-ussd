@@ -1,0 +1,22 @@
+PODS:
+  - CryptoSwift (0.13.1)
+
+DEPENDENCIES:
+  - CryptoSwift (from `https://github.com/krzyzanowskim/CryptoSwift`, branch `master`)
+
+EXTERNAL SOURCES:
+  CryptoSwift:
+    :branch: master
+    :git: https://github.com/krzyzanowskim/CryptoSwift
+
+CHECKOUT OPTIONS:
+  CryptoSwift:
+    :commit: 288692d159d1babc245a031dc59be759efd531bc
+    :git: https://github.com/krzyzanowskim/CryptoSwift
+
+SPEC CHECKSUMS:
+  CryptoSwift: ff68c35a53e03177d31aaa2c1e8b3e010aeed6cb
+
+PODFILE CHECKSUM: 18138fae22b306efc0bb08daf41afe7eada557d9
+
+COCOAPODS: 1.5.3
