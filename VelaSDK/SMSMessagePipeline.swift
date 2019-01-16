@@ -21,30 +21,42 @@ public class SMSMessagePipeline<T: Codable>: SMSMessageProtocol{
     
     public init(serviceCode: String){self.serviceCode = serviceCode}
     
+    
+    private func toVCSDataStructure(encryptedText: String) -> String{
+        let sharedServiceCode = (MERCHANT_SHARED_CODE != nil) ? MERCHANT_SHARED_CODE : "0"
+        let targetedSystem = 0 //merchant request
+        let appId = CLIENT_APP_ID
+        
+        let vcsRequest = "\(sharedServiceCode!):\(targetedSystem):\(appId!):\(encryptedText)"
+        return vcsRequest
+    }
+    
     public func createEncryptedMessage() throws -> String {
         let messageTransmission = MessageTransmission.getInstance(secretKey: SMS_ENCRYPTION_KEY)
         
         self.stamp = generatedStamp()
-        let text = try createMessage(stamp: stamp);
+        let text = createCompressedMessage(stamp: stamp)
         print(text)
         let iv = SMSMessagePipeline.generateIVString()
         let encryptedMessage =  try messageTransmission.aesEncrypt(text: text, iv: iv)
-        return SMS_API_TEXT_PREFIX + " " + encryptedMessage
-    }
-    
-    public func createNonEncryptedMessage(stamp: String) throws -> String{
-        let encryptedMessage = try createMessage(stamp: stamp)
-        return "\(SMS_API_TEXT_PREFIX!) \(encryptedMessage)"
-    }
-    
-    public func createMessage(stamp: String) throws -> String {
-        let encoder = JSONEncoder()
-        let message = Message(data: self.data, stamp: stamp, serviceCode: serviceCode)
         
-        return String(data: try encoder.encode(message), encoding: .utf8)!
+        let vcsRequest = toVCSDataStructure(encryptedText: encryptedMessage)
+        return SMS_API_TEXT_PREFIX + " " + vcsRequest
     }
+//
+//    public func createNonEncryptedMessage(stamp: String) throws -> String{
+//        let encryptedMessage = try createMessage(stamp: stamp)
+//        return "\(SMS_API_TEXT_PREFIX!) \(encryptedMessage)"
+//    }
     
-    public func createCompressedMessage(stamp: String) -> String {return ""}
+//    public func createMessage(stamp: String) throws -> String {
+//        let encoder = JSONEncoder()
+//        let message = Message(data: self.data, stamp: stamp, serviceCode: serviceCode)
+//
+//        return String(data: try encoder.encode(message), encoding: .utf8)!
+//    }
+    
+    public func createCompressedMessage(stamp: String) -> String { return ""}
     
     public func getOTPServiceCode() -> String?{return nil}
     
