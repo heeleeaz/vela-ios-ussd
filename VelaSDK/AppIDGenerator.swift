@@ -7,6 +7,7 @@
 //
 
 import Foundation
+
 internal class AppIDGenerator{
     private let base10Key = [
     "00", "01", "02", "03", "04", "05", "06", "07", "08", "09", "10", "11", "12", "13", "14", "15", "16",
@@ -35,12 +36,12 @@ internal class AppIDGenerator{
             throw AppIDGeneratorError.invalidSmsShortCode(message: "smsShortCode must be <= 8")
         }
 
-        let pn = deviceImei.substring(to: max(deviceImei.count - 16, 0));
-        let concat = "\(pn)\(smsShortCode)"
-        
+        let concat = "\(deviceImei)\(smsShortCode)"
+
         let concatLength = concat.count
         var seek = concatLength
         let endArg = concatLength % 2
+        
         
         var builder = ""
         while(seek > endArg){
@@ -54,6 +55,8 @@ internal class AppIDGenerator{
         }
         
         if endArg == 1 {builder.append(concat.substring(from: concatLength - 1))}
+        
+        return builder
     }
     
     private func keyIndex(_ key: String) -> Int?{
@@ -65,6 +68,5 @@ enum AppIDGeneratorError: Error {
     case invalidImei(message: String)
     case invalidSmsShortCode(message: String)
 }
-
 
 

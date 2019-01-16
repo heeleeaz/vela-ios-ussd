@@ -1,0 +1,6 @@
+framework module Pods_VelaSDK_VelaSDKTests {
+  umbrella header "Pods-VelaSDK-VelaSDKTests-umbrella.h"
+
+  export *
+  module * { export * }
+}

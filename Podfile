@@ -6,4 +6,7 @@ target 'VelaSDK' do
   pod 'CryptoSwift', :git => "https://github.com/krzyzanowskim/CryptoSwift", :branch => "master"
 
 
+  target 'VelaSDKTests' do
+#      inherit! :search_paths
+  end
 end
